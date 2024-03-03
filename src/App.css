@@ -1,0 +1,166 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+
+}
+
+.catContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  /* flex-direction: row; */
+}
+
+.catogory {
+  background-color: rgb(127, 185, 34);
+  border: 2px solid rgb(0, 0, 0);
+  margin: 10px;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+  /* Add transition for smooth color change */
+}
+
+.catogory:hover {
+  background-color: yellow;
+  /* Change to a different color on hover */
+  border: 10px solid rgb(59, 23, 189);
+  border-radius: 50%;
+  font-size: xx-large;
+  color: white;
+}
+
+.catogory.animated {
+  animation: colorChange 2s infinite alternate;
+  /* Add a simple color-changing animation */
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: aquamarine;
+  }
+
+  100% {
+    background-color: #FF6347;
+    /* Change to a different color at the end of the animation */
+  }
+}
+
+
+/* Neet.css */
+
+/* Neet.css */
+
+.neet-container {
+
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f6f7fa;
+  /* Dark background color */
+  color: #0a0202;
+  /* Text color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.neet-heading {
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #4972eca1;
+  /* Dark background color */
+  color: #0a0202;
+  /* Text color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.question-container {
+  margin-bottom: 20px;
+
+}
+
+p {
+  font-size: 18px;
+}
+
+.options-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.options-list li {
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+label {
+  color: black;
+  /* Golden text color for options */
+}
+
+button {
+  background-color: #00f7ff;
+  /* Golden button background color */
+  color: #161616;
+  /* Dark button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+
+  margin: 5px !important;
+}
+
+button:hover {
+  background-color: #7fff07;
+  transform: scale(1.1);
+  /* Slightly lighter golden color on hover */
+}
+
+/* Add more styles or animations as needed */
+
+.non-attempted {
+
+  background-color: red;
+  border: solid black 1px;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  margin: 3px;
+
+}
+
+.attempted {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: solid black 1px;
+  border-radius: 30px;
+}
+
+.neet-parent {
+  display: flex;
+
+}
+
+
+.question-status-container {
+  display: flex;
+  flex-wrap: wrap
+}
